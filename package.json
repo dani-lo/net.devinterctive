@@ -1,0 +1,8 @@
+{
+  "author": "dani lo",
+  "name": "devinteractive.net",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "0.3.17"
+  }
+}
