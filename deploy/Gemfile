@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+gem "shotgun"
+gem "thin"
+gem "sinatra"
+gem "haml"
+gem "lorem"

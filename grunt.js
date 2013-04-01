@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     copy: {
       target: {
         files: {
-          'deploy/public/': ['src/js/**']
+          'deploy/public/js/': ['src/js/**']
         }
       }
     },
