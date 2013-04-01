@@ -8,6 +8,14 @@ require "haml"
 
 class Devinteractive < Sinatra::Application
 
+    @app_paths = {
+      :routes => "/home/dani/dev/devinteractive.net/www/deploy/routes/"
+    }
+
+    class << self
+      attr_accessor :app_paths
+    end
+
     configure do
 
         use Rack::Session::Cookie, :key => "rack.session",
