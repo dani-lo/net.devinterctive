@@ -31,8 +31,8 @@ class Devinteractive < Sinatra::Application
     end
 end
 
-require "models/init"
+require_relative "models/init"
 
 # initialise routes
-require "routes/init"
-require "helpers/init"
+require_relative "routes/init"
+require_relative "helpers/init"

@@ -1,0 +1,37 @@
+!!!
+
+-# liberated from HTML5 Boilerplate
+
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+%head
+    =haml :"partials/head"
+    =haml :"partials/scripts"
+
+%body{:class => determine_body_class}
+
+    .skip
+        %a{:href => "#content"} Skip to main content
+
+    .outer-wrapper
+
+        / STARTMOD | header | default
+        -# =determine_header
+        / ENDMOD | header | default
+
+        .wrapper
+
+            / STARTMOD | mainpage | default
+            #content.content-wrapper{:class => @category}
+                =haml :"partials/noscript"
+
+                =yield
+            / ENDMOD | mainpage | default
+
+        - if !@error_page
+            =haml :"partials/footer"
+
+</html>
