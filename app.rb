@@ -7,7 +7,9 @@ class Stream
   end
 end
 
-get('/') { Stream.new }
+get('/') {
+    Stream.new
+}
 
 get '/stuff' do
     'hi stuff'

@@ -18,7 +18,13 @@ module.exports = function(grunt) {
     coffee: {
       app: {
         src: ['src/scripts/**.coffee'],
-        dest: 'deploy/public/js/**.js'
+        dest: 'deploy/public/js'
+      }
+    },
+    sass: {
+      app: {
+        src: ['src/sass/**.sass'],
+        dest: 'deploy/public/css/**.css'
       }
     },
     // Configure the copy task to move files from the development to production folders
@@ -34,17 +40,18 @@ module.exports = function(grunt) {
       jscompile : {
         files: 'src/scripts/*',
         tasks: ['coffee']
+      },
+      sasscompile : {
+        files : "src/sass/*",
+        tasks: ['sass']
       }
     }
   });
-
-
   // Load plugins here
   grunt.loadNpmTasks('grunt-contrib');
-
+  grunt.loadNpmTasks('grunt-contrib-sass');
    // Define your tasks here
   grunt.registerTask('default', ['watch']);
 
   // Define your tasks here
-
 };
