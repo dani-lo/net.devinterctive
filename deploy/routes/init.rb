@@ -13,3 +13,8 @@ end
 load_set %w{
     home
 }, :pages
+
+# individual pages on the site
+load_set %w{
+    cv
+}, :services

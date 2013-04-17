@@ -1,4 +1,7 @@
-foo: whatever
-bar:
- - uno
- - dos
+jquery     : //ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js
+swfobject  : //ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js
+modernizr  : /js/lib/modernizr.custom.67720.js
+require    : /js/lib/require.js
+underscore : /js/lib/underscore.js
+backbone   : /js/lib/backbone.js
+polyfill_placeholder : /js/lib/polyfill/jquery-placeholder.js
