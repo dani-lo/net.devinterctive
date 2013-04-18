@@ -13,15 +13,11 @@
 
   require.config(requireSettings);
 
-  require(["app/loader"], _.bind(function(Loader) {
-    return Loader.initialize;
+  require(["util/loader"], _.bind(function(Loader) {
+    var loader;
+    return loader = Loader.init({
+      name: "john"
+    });
   }, this));
-
-}).call(this);
-
-(function() {
-  /(?:)/;
-
-
 
 }).call(this);

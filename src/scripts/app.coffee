@@ -8,6 +8,6 @@ requireSettings =
 
 require.config requireSettings
 
-require ["app/loader"], _.bind (Loader) ->
-    Loader.initialize
+require ["util/loader"], _.bind (Loader) ->
+    loader = Loader.init {name : "john"}
 , this

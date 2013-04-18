@@ -19,7 +19,8 @@ module.exports = function(grunt) {
                   join: true
                 },
                 files: {
-                  'deploy/public/js/app.js': 'src/scripts/**/*.coffee'
+                  'deploy/public/js/app.js': 'src/scripts/app.coffee',
+                  'deploy/public/js/util/loader.js': 'src/scripts/util/loader.coffee'
                 }
             }
         },
