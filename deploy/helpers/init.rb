@@ -23,7 +23,7 @@ module FooUtils
 
     def determine_header
 
-        haml :"partials/headers/default"
+        #haml :"partials/headers/default"
     end
 end
 

@@ -14,6 +14,7 @@ load_set %w{
     home
     cv
     tests
+    akqa
 }, :pages
 
 # individual pages on the site

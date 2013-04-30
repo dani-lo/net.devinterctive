@@ -1,0 +1,86 @@
+body {
+	
+	background : #000 url(/images/akqa/bg.jpg) no-repeat;
+
+	#akqa-test {
+
+		width : 500px;
+		margin : 24px 0 0 36px;
+
+		h1, h2, h3, p, ul, li, a, span, label {
+
+			color : #fff;
+			font-family : Verdana;
+
+		}
+
+		#akqa-logo span{
+
+			font-size : 2em;
+		}
+
+		#akqa-logo > span{
+			display : block;
+			width : 120px;
+			height : 50px;
+			background : #000 url(/images/akqa/logo.png) no-repeat top left;
+			text-indent : 2000%;
+		}
+
+		ul#akqa-menu-list {
+			
+			margin : 40px 0 20px;
+			clear : left;
+
+			li {
+
+				float : left;
+				width : 77px;
+				height : 19px;
+				margin-right : 8px;
+				
+				&.clearfix {
+					clear : both;
+					float : none;
+					width : 0;
+					height : 0;
+				}
+
+				a {
+					display : block;
+					width : 77px;
+					height : 19px;
+					padding-top : 3px;
+					text-align : center;
+					text-decoration : none;
+					background : #000 url(/images/akqa/button_b.jpg) no-repeat top left;
+
+					&:hover {
+						background : #000 url(/images/akqa/button_a.jpg) no-repeat top left;
+					}
+				}
+			}
+		}
+
+		h2 {
+			margin : 32px 0;
+			font-size : 1.6em;
+			color : $AKQA_HIGHLIGHT_COLOR;
+		}
+
+		h3 {
+			margin : 20px 0;
+			font-size : 1.4em;
+		}
+
+		p {
+
+			font-weight : normal;
+			line-height : 1.3em;
+			
+			span {
+				font-weight : bold;
+			}
+		}
+	}
+}

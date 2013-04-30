@@ -54,3 +54,55 @@ a {
 
 .button {
   color: #333; }
+
+body {
+  background: #000 url(/images/akqa/bg.jpg) no-repeat; }
+  body #akqa-test {
+    width: 500px;
+    margin: 24px 0 0 36px; }
+    body #akqa-test h1, body #akqa-test h2, body #akqa-test h3, body #akqa-test p, body #akqa-test ul, body #akqa-test li, body #akqa-test a, body #akqa-test span, body #akqa-test label {
+      color: #fff;
+      font-family: Verdana; }
+    body #akqa-test #akqa-logo span {
+      font-size: 2em; }
+    body #akqa-test #akqa-logo > span {
+      display: block;
+      width: 120px;
+      height: 50px;
+      background: #000 url(/images/akqa/logo.png) no-repeat top left;
+      text-indent: 2000%; }
+    body #akqa-test ul#akqa-menu-list {
+      margin: 40px 0 20px;
+      clear: left; }
+      body #akqa-test ul#akqa-menu-list li {
+        float: left;
+        width: 77px;
+        height: 19px;
+        margin-right: 8px; }
+        body #akqa-test ul#akqa-menu-list li.clearfix {
+          clear: both;
+          float: none;
+          width: 0;
+          height: 0; }
+        body #akqa-test ul#akqa-menu-list li a {
+          display: block;
+          width: 77px;
+          height: 19px;
+          padding-top: 3px;
+          text-align: center;
+          text-decoration: none;
+          background: #000 url(/images/akqa/button_b.jpg) no-repeat top left; }
+          body #akqa-test ul#akqa-menu-list li a:hover {
+            background: #000 url(/images/akqa/button_a.jpg) no-repeat top left; }
+    body #akqa-test h2 {
+      margin: 32px 0;
+      font-size: 1.6em;
+      color: #ff0066; }
+    body #akqa-test h3 {
+      margin: 20px 0;
+      font-size: 1.4em; }
+    body #akqa-test p {
+      font-weight: normal;
+      line-height: 1.3em; }
+      body #akqa-test p span {
+        font-weight: bold; }
