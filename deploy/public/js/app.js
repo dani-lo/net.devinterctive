@@ -15,9 +15,7 @@
 
   require(["util/loader"], _.bind(function(Loader) {
     var loader;
-    return loader = Loader.init({
-      name: "john"
-    });
+    return loader = Loader.init({});
   }, this));
 
 }).call(this);

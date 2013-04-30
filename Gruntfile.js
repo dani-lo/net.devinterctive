@@ -20,7 +20,9 @@ module.exports = function(grunt) {
                 },
                 files: {
                   'deploy/public/js/app.js': 'src/scripts/app.coffee',
-                  'deploy/public/js/util/loader.js': 'src/scripts/util/loader.coffee'
+                  'deploy/public/js/util/loader.js': 'src/scripts/util/loader.coffee',
+                  'deploy/public/js/tests/qunit-tests.js' : 'src/scripts/tests/qunit-tests.coffee',
+                  'deploy/public/js/tests/require-test-module.js' : 'src/scripts/tests/require-test-module.coffee'
                 }
             }
         },
@@ -71,5 +73,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('dryrun', ['sass', 'coffee']);
     grunt.registerTask('dist', ['copy']);
 }

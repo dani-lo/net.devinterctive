@@ -12,6 +12,8 @@ end
 # individual pages on the site
 load_set %w{
     home
+    cv
+    tests
 }, :pages
 
 # individual pages on the site

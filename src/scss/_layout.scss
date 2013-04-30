@@ -1,11 +1,9 @@
 .content-navigation {
-  border-color: $blue;
-  color:
-    darken($blue, 9%);
+  border-color: $CONTENT_BORDER_COLOR;
 }
 
 .border {
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
+  padding: $MAIN_BOX_PADDING / 2;
+  margin: $MAIN_BOX_PADDING  / 2;
+  border-color: $CONTENT_BORDER_COLOR;
 }

@@ -9,5 +9,5 @@ requireSettings =
 require.config requireSettings
 
 require ["util/loader"], _.bind (Loader) ->
-    loader = Loader.init {name : "john"}
+    loader = Loader.init {}
 , this

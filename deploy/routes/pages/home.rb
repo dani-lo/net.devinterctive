@@ -1,3 +1,3 @@
 get '/' do
-  haml :"pages/home"
+    haml :"pages/home"
 end

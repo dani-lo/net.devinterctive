@@ -1,3 +1,5 @@
-p {
+h1, h2, h3, h4, li, p, span {
+    font-family : Arial;
     font-size : 0.8em;
+    color : $MAIN_TXT_COLOR;
 }

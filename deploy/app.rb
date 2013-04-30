@@ -6,6 +6,14 @@ require "bundler/setup"
 require "sinatra"
 require "haml"
 
+use Rack::Session::Pool, :expire_after => 259200
+
+set :haml, {
+            :format => :html5,
+            :ugly => false,
+            :attr_wrapper => "\""
+        }
+
 class Devinteractive < Sinatra::Application
 
     @app_paths = {
@@ -18,21 +26,16 @@ class Devinteractive < Sinatra::Application
 
     configure do
 
-        use Rack::Session::Cookie, :key => "rack.session",
-                                   :path => "/",
-                                   :expire_after => 2592000,
-                                   :secret => "a32vdswe87653aax"
 
-        set :haml, {
-            :format => :html5,
-            :ugly => false,
-            :attr_wrapper => "\""
-        }
+        #use Rack::Session::Cookie, :key => "rack.session",
+        #                           :path => "/",
+        #                           :expire_after => 2592000,
+        #                           :secret => "a32vdswe87653aax"
+
+
     end
 end
 
-require_relative "models/init"
-
-# initialise routes
 require_relative "routes/init"
+require_relative "models/init"
 require_relative "helpers/init"

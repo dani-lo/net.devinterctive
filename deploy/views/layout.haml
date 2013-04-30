@@ -10,16 +10,15 @@
 %head
     =haml :"partials/head"
     =haml :"partials/scripts"
+    =haml :"partials/styles"
 
 %body{:class => determine_body_class}
 
-    .skip
-        %a{:href => "#content"} Skip to main content
 
     .outer-wrapper
 
         / STARTMOD | header | default
-        -# =determine_header
+        =determine_header
         / ENDMOD | header | default
 
         .wrapper
