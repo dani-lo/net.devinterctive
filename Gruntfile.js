@@ -22,7 +22,9 @@ module.exports = function(grunt) {
                   'deploy/public/js/app.js': 'src/scripts/app.coffee',
                   'deploy/public/js/util/loader.js': 'src/scripts/util/loader.coffee',
                   'deploy/public/js/tests/qunit-tests.js' : 'src/scripts/tests/qunit-tests.coffee',
-                  'deploy/public/js/tests/require-test-module.js' : 'src/scripts/tests/require-test-module.coffee'
+                  'deploy/public/js/tests/require-test-module.js' : 'src/scripts/tests/require-test-module.coffee',
+                  'deploy/public/js/views/akqa-main.js' : 'src/scripts/views/akqa-main.coffee',
+                  'deploy/public/js/models/akqa-news-item.js' : 'src/scripts/models/akqa-news-item.coffee'
                 }
             }
         },
