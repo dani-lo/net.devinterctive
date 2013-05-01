@@ -56,13 +56,13 @@ a {
   color: #333; }
 
 body {
-  background: #000 url(/images/akqa/bg.jpg) no-repeat; }
+  background: black url(/images/akqa/bg.jpg) no-repeat; }
   body #akqa-test {
     width: 500px;
     margin: 24px 0 0 36px; }
     body #akqa-test h1, body #akqa-test h2, body #akqa-test h3, body #akqa-test p, body #akqa-test ul, body #akqa-test li, body #akqa-test a, body #akqa-test span, body #akqa-test label {
-      color: #fff;
-      font-family: Verdana; }
+      color: white;
+      font-family: "Trebuchet ms", Verdana, sans-serif; }
     body #akqa-test #akqa-logo span {
       font-size: 2em; }
     body #akqa-test #akqa-logo > span {
@@ -72,7 +72,7 @@ body {
       background: #000 url(/images/akqa/logo.png) no-repeat top left;
       text-indent: 2000%; }
     body #akqa-test ul#akqa-menu-list {
-      margin: 40px 0 20px;
+      margin: 40px 0;
       clear: left; }
       body #akqa-test ul#akqa-menu-list li {
         float: left;
@@ -91,18 +91,57 @@ body {
           padding-top: 3px;
           text-align: center;
           text-decoration: none;
-          background: #000 url(/images/akqa/button_b.jpg) no-repeat top left; }
+          background: #000 url(/images/akqa/button_b.jpg) no-repeat top left;
+          color: white; }
           body #akqa-test ul#akqa-menu-list li a:hover {
-            background: #000 url(/images/akqa/button_a.jpg) no-repeat top left; }
+            background: #000 url(/images/akqa/button_a.jpg) no-repeat top left;
+            color: #ffee33; }
+    body #akqa-test ul.akqa-focus-list {
+      margin: 12px 0;
+      list-style-type: square;
+      list-style-position: inside; }
+      body #akqa-test ul.akqa-focus-list li {
+        padding: 3px; }
     body #akqa-test h2 {
-      margin: 32px 0;
+      margin: 38px 0;
       font-size: 1.6em;
       color: #ff0066; }
     body #akqa-test h3 {
-      margin: 20px 0;
+      margin: 16px 0;
       font-size: 1.4em; }
+    body #akqa-test h4 {
+      margin: 12px 0;
+      font-size: 1em;
+      font-weight: bold;
+      color: #ffee33; }
     body #akqa-test p {
+      margin: 6px 0 6px;
       font-weight: normal;
       line-height: 1.3em; }
       body #akqa-test p span {
         font-weight: bold; }
+    body #akqa-test a {
+      text-decoration: none;
+      color: #ffee33; }
+      body #akqa-test a:hover {
+        color: white; }
+    body #akqa-test p.akqa-toggle {
+      margin: 6px 0 12px 0;
+      font-size: 0.95em; }
+      body #akqa-test p.akqa-toggle a {
+        font-weight: bold;
+        color: #ff0066; }
+    body #akqa-test .news-item {
+      margin: 0 0 16px 0; }
+      body #akqa-test .news-item p.quote {
+        margin: 12px 24px; }
+    body #akqa-test form p.instruction {
+      margin: 12px 0; }
+    body #akqa-test form .form-field {
+      margin: 12px 0; }
+      body #akqa-test form .form-field label {
+        display: block;
+        margin: 4px 0;
+        font-size: 0.8em; }
+      body #akqa-test form .form-field input.input-txt {
+        display: block; }

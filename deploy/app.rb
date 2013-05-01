@@ -17,7 +17,7 @@ set :haml, {
 class Devinteractive < Sinatra::Application
 
     @app_paths = {
-      :routes => "/Users/dani/Sites/devinteractive.net/app/net.devinterctive/deploy/routes/"
+      :routes => "/home/dani/dev/devinteractive.net/www/deploy/routes/"
     }
 
     class << self

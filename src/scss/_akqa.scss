@@ -1,6 +1,6 @@
 body {
-	
-	background : #000 url(/images/akqa/bg.jpg) no-repeat;
+
+	background : $AKQA_BG_COLOR url(/images/akqa/bg.jpg) no-repeat;
 
 	#akqa-test {
 
@@ -9,8 +9,8 @@ body {
 
 		h1, h2, h3, p, ul, li, a, span, label {
 
-			color : #fff;
-			font-family : Verdana;
+			color : $AKQA_TXT_COLOR;
+			font-family : "Trebuchet ms", Verdana, sans-serif;
 
 		}
 
@@ -20,16 +20,18 @@ body {
 		}
 
 		#akqa-logo > span{
+
 			display : block;
 			width : 120px;
 			height : 50px;
 			background : #000 url(/images/akqa/logo.png) no-repeat top left;
 			text-indent : 2000%;
+
 		}
 
 		ul#akqa-menu-list {
-			
-			margin : 40px 0 20px;
+
+			margin : 40px 0;
 			clear : left;
 
 			li {
@@ -38,8 +40,9 @@ body {
 				width : 77px;
 				height : 19px;
 				margin-right : 8px;
-				
+
 				&.clearfix {
+
 					clear : both;
 					float : none;
 					width : 0;
@@ -47,6 +50,7 @@ body {
 				}
 
 				a {
+
 					display : block;
 					width : 77px;
 					height : 19px;
@@ -54,33 +58,138 @@ body {
 					text-align : center;
 					text-decoration : none;
 					background : #000 url(/images/akqa/button_b.jpg) no-repeat top left;
+					color : $AKQA_TXT_COLOR;
 
 					&:hover {
+
 						background : #000 url(/images/akqa/button_a.jpg) no-repeat top left;
+						color : $AKQA_CTA_COLOR;
+
 					}
 				}
 			}
 		}
 
+		ul.akqa-focus-list {
+
+			margin : 12px 0;
+			list-style-type : square;
+			list-style-position : inside;
+
+			li {
+
+				padding : 3px;
+
+			}
+
+		}
+
 		h2 {
-			margin : 32px 0;
+
+			margin : 38px 0;
 			font-size : 1.6em;
 			color : $AKQA_HIGHLIGHT_COLOR;
+
 		}
 
 		h3 {
-			margin : 20px 0;
+
+			margin : 16px 0;
 			font-size : 1.4em;
+
+		}
+
+		h4 {
+
+			margin : 12px 0;
+			font-size : 1em;
+			font-weight : bold;
+			color : $AKQA_SUBHEADING_COLOR;
+
 		}
 
 		p {
 
+			margin : 6px 0 6px;
 			font-weight : normal;
 			line-height : 1.3em;
-			
+
 			span {
+
 				font-weight : bold;
+
 			}
+		}
+
+
+		a {
+
+			text-decoration : none;
+			color : $AKQA_CTA_COLOR;
+
+			&:hover {
+
+				color : $AKQA_TXT_COLOR;
+
+			}
+
+		}
+
+		p.akqa-toggle {
+
+			margin : 6px 0 12px 0;
+			font-size : 0.95em;
+
+			a {
+
+				font-weight : bold;
+				color : $AKQA_TOGGLE_COLOR;
+
+			}
+
+		}
+
+
+
+		.news-item {
+
+			margin : 0 0 16px 0;
+
+			p.quote {
+
+				margin : 12px 24px;
+
+			}
+
+		}
+		form {
+
+			p.instruction {
+
+				margin : 12px 0;
+
+			}
+
+			.form-field {
+
+				margin : 12px 0;
+
+				label {
+
+					display : block;
+					margin : 4px 0;
+					font-size : 0.8em;
+
+				}
+
+				input.input-txt {
+
+					display : block;
+
+				}
+
+			}
+
 		}
 	}
 }
