@@ -50,7 +50,7 @@
 
             %p.akqa-toggle
 
-                %a{:href => "#_"} &gt;&gt; Show &frasl; Hide news item
+                %a.btn-toggle{:href => "#_"} &gt;&gt; Show &frasl; Hide news item
 
             .news-item-container.toggable-container
 
@@ -62,7 +62,7 @@
 
             %p.akqa-toggle
 
-                %a{:href => "#_"} &gt;&gt; Show &frasl; Hide news item
+                %a.btn-toggle{:href => "#_"} &gt;&gt; Show &frasl; Hide news item
 
             .news-item-container.toggable-container
 
@@ -80,21 +80,21 @@
 
         .form-field
 
-            %label{:for =>"contact-name"} Contact name &#42;:
+            %label{:for =>"contactname"} Contact name &#42;:
 
-            %input.input-txt.mandatory#contact-name{:name => "contact-name", :value => ""}
-
-        .form-field
-
-            %label{:for =>"contact-email"} Contact email address &#42;:
-
-            %input.input-txt.mandatory#contact-email{:name => "contact-email", :value => ""}
+            %input.input-txt.mandatory#contact-name{:name => "contactname", :value => ""}
 
         .form-field
 
-            %label{:for =>"contact-number"} Contact number :
+            %label{:for =>"contactemail"} Contact email address &#42;:
 
-            %input.input-txt#contact-number{:name => "contact-number", :value => ""}
+            %input.input-txt.mandatory#contact-email{:name => "contactemail", :value => ""}
+
+        .form-field
+
+            %label{:for =>"contactnumber"} Contact number :
+
+            %input.input-txt#contact-number{:name => "contactnumber", :value => ""}
 
         .form-field
 

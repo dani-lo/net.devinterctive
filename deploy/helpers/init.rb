@@ -1,24 +1,14 @@
-=begin
-%w{
-    header
-}.each do |helper| require_relative helper end
-
-
-Devinteractive.helpers (
-    Header
-)
-=end
-
-module FooUtils
+module ContestDetermine
 
     def determine_body_class
 
         clz = []
 
-        clz.push "homepage"
-        clz.push "homepage test"
+        clz.push "base"
 
-        return "cust"
+        clz.push "akqa" if request.path_info =~ /akqa(.*)/
+
+        return clz.join " "
     end
 
     def determine_header
@@ -27,10 +17,4 @@ module FooUtils
     end
 end
 
-module BarUtils
-    def bar
-        "barbar"
-    end
-end
-
-helpers FooUtils, BarUtils
+helpers ContestDetermine
