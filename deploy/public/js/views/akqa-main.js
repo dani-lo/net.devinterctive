@@ -26,9 +26,9 @@
         /[^\s]/.test(contactname || (error += "Please enter your name"));
         /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/.test(contactname || (error += "Please enter a valid email"));
         if (error === "") {
-          return error;
+          return true;
         }
-        return true;
+        return error;
       }
     });
     returnObj = {
