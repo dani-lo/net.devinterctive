@@ -16,7 +16,7 @@ define [
                 model : ContactModel.init {validate : true}
                 $form : $ ".form-validate"
 
-            return @.render
+            return @.render()
 
         render : ->
 
