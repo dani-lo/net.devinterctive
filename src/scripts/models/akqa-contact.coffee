@@ -5,33 +5,29 @@ define [], ->
         email : /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/
 
     validationErrors =
-        name : "Please enter your name<br />"
-        email : "Please enter a valid email<br />"
+        name : "Please enter your name"
+        email : "Please enter a valid email"
 
     ContactModel = Backbone.Model.extend
 
         initalize: (params) ->
 
-            @validationError = ""
+            @aErrors = []
 
         validate: (attrs, options) ->
 
             contactname = attrs.contactname
             contactemail = attrs.contactemail
             contactnumber = attrs.contactnumber
-            errorMsg = ""
+            notvalid = "not valid"
 
-            validationRegex.txt.test contactname or
-                errorMsg += validationErrors.name
+            @aErrors = []
+            
+            @aErrors.push validationErrors.name unless contactname.match validationRegex.txt
 
-            validationRegex.email.test contactemail or
-                errorMsg += validationErrors.email
+            @aErrors.push validationErrors.email unless contactemail.match validationRegex.email 
 
-            # BBone does not seem to be setting validationError
-            # property of its own so lets 'override' this behaviour
-            @validationError = errorMsg
-
-            return errorMsg unless errorMsg is ""
+            if @aErrors.length then return notvalid
 
     returnObj =
 

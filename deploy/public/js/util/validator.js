@@ -1,23 +1,27 @@
 (function() {
 
-  define([], function() {
+  define(["hgn!tpl/akqa/contact-error"], function(ContactErrorTpl) {
     var Validator, returnObj;
     Validator = (function() {
 
       function Validator(params) {
         this.$form = params.$form || null;
         this.model = params.model || null;
+        this.$errorTpl = null;
         this.$form.on("submit", _.bind(function(ev) {
           var $dataInputs, formData;
           formData = {};
           $dataInputs = this.$form.find("input.data-input");
+          if (this.$errorTpl) {
+            this.$errorTpl.remove();
+          }
+          this.$errorTpl = null;
           _.each($dataInputs, _.bind(function(elInput) {
             var key;
             key = $(elInput).attr("name").replace("-", "");
             return formData[key] = $(elInput).val();
           }, this));
-          this.validate(formData);
-          return false;
+          return this.validate(formData);
         }, this));
       }
 
@@ -26,8 +30,16 @@
         if (this.model.isValid()) {
           return true;
         }
-        console.log(this.model.validationError);
+        this.display(this.model.aErrors);
         return false;
+      };
+
+      Validator.prototype.display = function(aErrors) {
+        this.$errorTpl = $(ContactErrorTpl({
+          aErrors: aErrors
+        }));
+        this.$form.prepend(this.$errorTpl);
+        return this;
       };
 
       return Validator;

@@ -3,5 +3,5 @@ get '/akqa' do
 end
 
 get '/akqa-test' do
-    haml :"pages/akqa-test"
+    haml :"pages/tests/js"
 end

@@ -6,7 +6,7 @@ define [
 
     AkqaView =  Backbone.View.extend
 
-        el : "#akqa-test"
+        el : "#akqa"
 
         initialize : (params) ->
 

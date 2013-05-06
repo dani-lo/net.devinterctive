@@ -2,7 +2,21 @@
 
 	background : $AKQA_BG_COLOR url(/images/akqa/bg.jpg) no-repeat;
 
-	#akqa-test {
+	&.akqa-test {
+
+		background : none;
+
+		#qunit-dom {
+
+			display : none;
+
+		}
+	
+	}
+
+
+
+	#akqa {
 
 		width : 500px;
 		margin : 24px 0 0 36px;
@@ -11,6 +25,20 @@
 
 			color : $AKQA_TXT_COLOR;
 			font-family : "Trebuchet ms", Verdana, sans-serif;
+
+		}
+
+		ul.errors-list {
+
+			padding : 4px;
+			border : 1px dotted $WHITE;
+
+			li {
+
+				padding : 3px 0;
+				color : $AKQA_ERROR_COLOR;
+
+			}
 
 		}
 

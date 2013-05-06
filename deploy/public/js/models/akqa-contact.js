@@ -7,24 +7,28 @@
       email: /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/
     };
     validationErrors = {
-      name: "Please enter your name<br />",
-      email: "Please enter a valid email<br />"
+      name: "Please enter your name",
+      email: "Please enter a valid email"
     };
     ContactModel = Backbone.Model.extend({
       initalize: function(params) {
-        return this.validationError = "";
+        return this.aErrors = [];
       },
       validate: function(attrs, options) {
-        var contactemail, contactname, contactnumber, errorMsg;
+        var contactemail, contactname, contactnumber, notvalid;
         contactname = attrs.contactname;
         contactemail = attrs.contactemail;
         contactnumber = attrs.contactnumber;
-        errorMsg = "";
-        validationRegex.txt.test(contactname || (errorMsg += validationErrors.name));
-        validationRegex.email.test(contactemail || (errorMsg += validationErrors.email));
-        this.validationError = errorMsg;
-        if (errorMsg !== "") {
-          return errorMsg;
+        notvalid = "not valid";
+        this.aErrors = [];
+        if (!contactname.match(validationRegex.txt)) {
+          this.aErrors.push(validationErrors.name);
+        }
+        if (!contactemail.match(validationRegex.email)) {
+          this.aErrors.push(validationErrors.email);
+        }
+        if (this.aErrors.length) {
+          return notvalid;
         }
       }
     });

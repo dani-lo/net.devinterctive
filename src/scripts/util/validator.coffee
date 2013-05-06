@@ -1,16 +1,22 @@
-define [], ->
+define ["hgn!tpl/akqa/contact-error"], (ContactErrorTpl)->
 
     class Validator
 
         constructor: (params) ->
 
-            @$form = params.$form || null
-            @model = params.model || null
+            @$form = params.$form or null
+            @model = params.model or null
+
+            @$errorTpl = null
 
             @$form.on "submit", _.bind (ev) ->
 
                 formData = {}
                 $dataInputs = @$form.find "input.data-input"
+
+                if @$errorTpl then @$errorTpl.remove()
+
+                @$errorTpl = null
 
                 _.each $dataInputs, _.bind (elInput) ->
 
@@ -20,9 +26,7 @@ define [], ->
 
                 , @
 
-                @.validate formData
-
-                return false
+                return @.validate formData
 
             , @
 
@@ -32,9 +36,17 @@ define [], ->
 
             if @model.isValid() then return true
 
-            console.log  @model.validationError
+            @display  @model.aErrors
 
             return false
+
+        display:  (aErrors) ->
+
+            @$errorTpl = $ ContactErrorTpl aErrors : aErrors
+
+            @$form.prepend @$errorTpl
+
+            return @
 
     returnObj =
 

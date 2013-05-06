@@ -8,6 +8,8 @@ module ContestDetermine
 
         clz.push "akqa" if request.path_info =~ /akqa(.*)/
 
+		clz.push "akqa-test" if request.path_info =~ /akqa-test(.*)/
+
         return clz.join " "
     end
 

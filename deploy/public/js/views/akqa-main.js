@@ -3,7 +3,7 @@
   define(["models/akqa-contact", "ui/helpers/toggable", "util/validator"], function(ContactModel, ToggableHelper, ValidatorUtil) {
     var AkqaView, returnObj;
     AkqaView = Backbone.View.extend({
-      el: "#akqa-test",
+      el: "#akqa",
       initialize: function(params) {
         this.toggable = ToggableHelper.init(null);
         this.validator = ValidatorUtil.init({
