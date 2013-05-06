@@ -7,17 +7,34 @@ define [], ->
             @$form = params.$form || null
             @model = params.model || null
 
-            @$form.on "submit" _.bind (ev) ->
+            @$form.on "submit", _.bind (ev) ->
 
-                #
+                formData = {}
+                $dataInputs = @$form.find "input.data-input"
+
+                _.each $dataInputs, _.bind (elInput) ->
+
+                    key = $(elInput).attr("name").replace "-", ""
+
+                    formData[key] = $(elInput).val()
+
+                , @
+
+                @.validate formData
+
+                return false
 
             , @
 
-            return @
+        validate: (formData) ->
 
-        validate: ->
+            @model.set formData
 
-            return @
+            if @model.isValid() then return true
+
+            console.log  @model.validationError
+
+            return false
 
     returnObj =
 

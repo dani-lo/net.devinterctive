@@ -23,7 +23,7 @@
         });
       };
 
-      Loader.prototype.batchLoad = function() {
+      Loader.prototype.batchLoad = function(flag) {
         var loadable, _i, _len, _ref, _results;
         _ref = settings.loadables;
         _results = [];

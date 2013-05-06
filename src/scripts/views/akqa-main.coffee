@@ -1,7 +1,8 @@
 define [
+    "models/akqa-contact",
     "ui/helpers/toggable",
-    "utils/validator"
-    ], (Toggable, Validator)->
+    "util/validator"
+    ], (ContactModel, ToggableHelper, ValidatorUtil)->
 
     AkqaView =  Backbone.View.extend
 
@@ -9,11 +10,10 @@ define [
 
         initialize : (params) ->
 
-            @toggable = Toggable.init
+            @toggable = ToggableHelper.init null
 
-            @validator = Validator.init
-
-                model : ContactModel
+            @validator = ValidatorUtil.init
+                model : ContactModel.init {validate : true}
                 $form : $ ".form-validate"
 
             return @.render
@@ -21,26 +21,6 @@ define [
         render : ->
 
             return @
-
-    ContactModel = Backbone.Model.extend
-
-        @error = ""
-
-        validate: (attrs, options) ->
-
-            @error = ""
-            contactname = attrs.contactname
-            contactemail = attrs.contactemail
-            contactnumber = attrs.contactnumber
-            
-
-            /[^\s]/.test contactname or @error += "Please enter your name"
-
-            /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/.test contactname or @error += "Please enter a valid email"
-
-            return true if @error is ""
-
-            return false
 
     returnObj =
 

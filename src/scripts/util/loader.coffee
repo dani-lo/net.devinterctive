@@ -15,7 +15,7 @@ define [], ->
 
                 params and module.init(params)
 
-            , this
+            , @
 
         addClass : ($selector, classPath, params) ->
 
@@ -24,7 +24,7 @@ define [], ->
                 classPath : classPath
                 params : params or null
 
-        batchLoad : ->
+        batchLoad : (flag) ->
 
             for loadable in settings.loadables
 

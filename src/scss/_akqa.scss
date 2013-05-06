@@ -26,6 +26,7 @@
 			height : 50px;
 			background : #000 url(/images/akqa/logo.png) no-repeat top left;
 			text-indent : 2000%;
+			overflow: hidden;
 
 		}
 
@@ -145,8 +146,28 @@
 				font-weight : bold;
 				color : $AKQA_TOGGLE_COLOR;
 
+				&:hover {
+
+					color : $AKQA_TOGGLE_HOVER_COLOR;
+
+				}
+
 			}
 
+		}
+
+		.toggable-container {
+
+			&.off {
+
+				display : none;
+			}
+
+			&.on {
+
+				display : block;
+
+			}
 		}
 
 

@@ -6,16 +6,17 @@ define [], ->
 
         initialize : (params) ->
 
-            return @.render
+            return @.render()
 
         render : ->
 
-            @el.on "click", _.bind (ev)->
+            @$el.on "click", _.bind (ev)->
 
                 $clicked = $(ev.currentTarget)
+
                 $toggleTarget = $clicked.parent()
                                         .parent()
-                                        .find "toggable-container"
+                                        .find ".toggable-container"
 
                 switch $toggleTarget.hasClass "off"
 
@@ -29,12 +30,14 @@ define [], ->
                         $toggleTarget.removeClass("on")
                                      .addClass("off")
 
+                return false
+
             , @
 
             return @
 
     returnObj =
 
-        init : (params)-> new AkqaView(params)
+        init : (params)-> new Toggable(params)
 
     return returnObj

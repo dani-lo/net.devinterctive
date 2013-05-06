@@ -26,7 +26,8 @@ module.exports = function(grunt) {
                   'deploy/public/js/views/akqa-main.js' : 'src/scripts/views/akqa-main.coffee',
                   'deploy/public/js/models/akqa-news-item.js' : 'src/scripts/models/akqa-news-item.coffee',
                   'deploy/public/js/ui/helpers/toggable.js' : 'src/scripts/ui/helpers/toggable.coffee',
-                  'deploy/public/js/utils/validator.js' : 'src/scripts/utils/validator.coffee',
+                  'deploy/public/js/util/validator.js' : 'src/scripts/util/validator.coffee',
+                  'deploy/public/js/models/akqa-contact.js' : 'src/scripts/models/akqa-contact.coffee'
                 }
             }
         },
