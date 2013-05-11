@@ -12,7 +12,7 @@
           }),
           $form: $(".form-validate")
         });
-        return this.render;
+        return this.render();
       },
       render: function() {
         return this;
