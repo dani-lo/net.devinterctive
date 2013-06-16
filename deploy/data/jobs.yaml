@@ -1,0 +1,51 @@
+-   jid : 0
+    date : December 2012 - April 2013
+    role : Javascript developer_c very cheap
+    company :
+        name : Grand Union
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Redevelopment from scratch of one of the UK top range supermarkets website (flagship)_c with focus on interactive elements to enhance customers online shopping experience;
+        -   Technology stack composed of Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra (for backend mockups)_c HAML_c Vagrant;
+        -   The project was managed in a loose Agile format with daily scrums;
+        -   Medium sized dedicated frontend development team working under GIT.
+    tech : Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra_c HAML_c Vagrant
+    urls :
+        -   Url will be disclosed following current backend integration (java_c third party)
+        -   http_cl_fs_fsthegrandunion.com
+    start : 01-12-2012
+
+-   jid : 1
+    date : October - November 2012
+    role : Javascript developer
+    company :
+        name : Full six
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        - Developed a pilot html5 Javascript application for Sainsburys (one of the UK major supermarkets) Christmas recipes_c in close collaboration with an Umbraco .NET developer (the application is entirely dynamic - cms driven_c a large "single page ajax application").
+        - Followed the project from technical specification (also providing advice in dealing with third party agency) to support for UX and design specifications and eventually development and bakend integration. The pilot proved very successful and is currently being used for other Sainsburys recipes applications.
+        - Scrum project management_c involving simultaneously Ux / Design / Development from projerct early stages
+    tech : Backbone_c RequireJS_c Underscore (with templating)_c Css3 animations_c Jquery_c Masonry
+    urls :
+        - http_cl_fs_fssainsburysatchristmas.com</li>
+        - http_cl_fs_fssainsburysrecipes.co.uk</li>
+        - http_cl_fs_fswww.group.fullsix.com/</li>
+    start : 01-10-2012
+
+-   jid : 2
+    date : July - September 2012
+    role : Javascript developer
+    company :
+        name : Grand Union_c  London
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Worked on Butlins UK website rebuild (all frontend_c backend developed by thie newrd party) as part of the frontend team.
+        -   Developed the javascript interactive application Interactive Resort Guide for the new Butlins website - a highly interactive "one page" js app based on drag and drop navigation and background images animation.
+    tech : Modernizr_c RequireJS_c Underscore_c Css3 animations_c Jquery_c Youtube js api
+    urls :
+        -   http_cl_fs_fsbutlins.com
+        -   http_cl_fs_fswww.butlins.com/interactive-resort-guide/ (modern browsers only)
+    start : 01-07-2012

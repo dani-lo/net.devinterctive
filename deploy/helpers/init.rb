@@ -1,4 +1,4 @@
-module ContestDetermine
+module HelperUtil
 
     def determine_body_class
 
@@ -17,6 +17,7 @@ module ContestDetermine
 
         #haml :"partials/headers/default"
     end
+
 end
 
-helpers ContestDetermine
+helpers HelperUtil

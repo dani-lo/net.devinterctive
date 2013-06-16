@@ -4,4 +4,5 @@ modernizr  : /js/lib/modernizr.custom.67720.js
 require    : /js/lib/require.js
 underscore : /js/lib/underscore.js
 backbone   : /js/lib/backbone.js
+knockout   : /js/lib/knockout-2.2.1.js
 polyfill_placeholder : /js/lib/polyfill/jquery-placeholder.js
