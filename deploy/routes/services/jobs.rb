@@ -3,7 +3,7 @@ before "/services/jobs*" do
     @jobs_loader = JobsLoader.new
 end
 
-get '/services/jobs/list' do
+get '/services/jobs' do
 
     json_jobs = @jobs_loader.to_json_string
 

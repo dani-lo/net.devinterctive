@@ -16,7 +16,7 @@
   require(["util/loader"], _.bind(function(Loader) {
     var loader;
     loader = Loader.init(null);
-    return loader.loadClass($(".akqa"), "views/akqa-main", {});
+    return loader.loadClass($(".cv"), "views/cv", {});
   }, this));
 
 }).call(this);

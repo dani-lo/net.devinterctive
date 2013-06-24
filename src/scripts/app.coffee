@@ -12,6 +12,6 @@ require ["util/loader"], _.bind (Loader) ->
 
     loader = Loader.init null
 
-    loader.loadClass $(".akqa"), "views/akqa-main", {}
+    loader.loadClass $(".cv"), "views/cv", {}
 
 , this
