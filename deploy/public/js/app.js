@@ -15,7 +15,8 @@
 
   require(["util/loader"], _.bind(function(Loader) {
     var loader;
-    return loader = Loader.init({});
+    loader = Loader.init(null);
+    return loader.loadClass($(".cv"), "views/cv", {});
   }, this));
 
 }).call(this);

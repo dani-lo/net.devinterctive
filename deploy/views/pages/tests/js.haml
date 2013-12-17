@@ -1,4 +1,21 @@
 #qunit
+
 #qunit-fixture
+
 %script{:src => "/js/lib/qunit-1.11.0.js", :type => "text/javascript"}
+
 %script{:src => "/js/tests/qunit-tests.js", :type => "text/javascript"}
+
+#qunit-dom
+
+	.news-item.toggable
+
+		%p.akqa-toggle
+
+			%a#btn-toggle-test.btn-toggle{:href => "#_"} &gt;&gt; Show &frasl; Hide news item
+
+		.news-item-container.toggable-container.on
+
+			%p <span>AKQA&rsquo;s</span> e-commerce solutions ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+
+			%p.quote I wanted to do laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

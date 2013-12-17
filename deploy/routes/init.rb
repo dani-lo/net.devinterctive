@@ -15,9 +15,11 @@ load_set %w{
     cv
     tests
     akqa
+    jobs
 }, :pages
 
 # individual pages on the site
 load_set %w{
     cv
+    jobs
 }, :services

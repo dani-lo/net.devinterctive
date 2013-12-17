@@ -9,5 +9,9 @@ requireSettings =
 require.config requireSettings
 
 require ["util/loader"], _.bind (Loader) ->
-    loader = Loader.init {}
+
+    loader = Loader.init null
+
+    loader.loadClass $(".cv"), "views/cv", {}
+
 , this

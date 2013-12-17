@@ -1,0 +1,143 @@
+-   jid : 7
+    date : September 2013 - Present
+    role : Javascript Programmer
+    company :
+        name : ATP
+        type : marketing data agency
+        description : small company dedicated to providing user data services to global clients and marketing agencies though the use of revolutionary marketing data parsing algorithms and state of the art presentation tools
+    tasks :
+        - Development of an advanced_c highly interactive and heavily data driven set of visualization tool built around the single page application web paradigm and employing a number of technology to help in displaying dynamic data charts_c tables_c aggregation tools and more
+        - Joined the project from start (frontend only) and took it to release stage
+    tech :  RequireJS_c d3_c Backbone_c Underscore_c Kinetic_c Svg_c Phonegap_c Chrome html5 FS api
+    urls :
+        -  URL is not public_c the application is logon based and access sold to users
+    start : 01-09-2013
+
+-   jid : 6
+    date : August 2013 - September 2013
+    role : Javascript and Phonegap developer
+    company :
+        name : Fishrod
+        type : interactive agency
+        description : interactive agency specialising in developing dynamic software for the web_c mobile and desktop market_c alongside interactive installation pieces
+    tasks :
+        - Development of a Phonegap iPad application targeting the Personal Trainers market;
+        - Joined the project at one third of comletion and took it to release stage;
+        - Technology stack composed of RequireJS_c Phonegap_c Backbone_c  Underscore_c Symfony;
+        - Frontend and backend development under GIT and development and refactor of new and existing API endpoints in Symfony (application backend).
+    tech :  RequireJS_c Phonegap_c Backbone_c  Underscore_c Symfony
+    urls :
+        -  http_cl_fs_fswww.fitfix.co.uk/
+    start : 01-08-2013
+
+-   jid : 5
+    date : June 2013 - August 2013
+    role : Javascript and Frontend developer_c
+    company :
+        name : Hangar 7
+        type : creative and content creation agency
+        description : Hangar Seven is a leader in the planning_c creation_c production and distribution of powerful Content that changes consumer opinion
+    tasks :
+        -   Development of web application working as a custom games hub for kids and branded for Tottenham Hotspur: a ground-breaking new entertainment platform that has been specially developed to engage young fans by capturing the imagination of 7 to 10 year old children;
+        -   Technology stack composed of custom js ajax library_c Drual_c Underscore_c Coffeescript_c Canvas;
+        -   The project was managed in a loose Agile format with weekly scrums and had several frontend developers working on it at different times;
+        -  Close interaction with backend working under GIT.
+    tech : Drupal Underscore_c Coffeescript_c Git_c Canvas
+    urls :
+        -  http_cl_fs_fstottenhamturfies.com
+    start : 01-06-2013
+
+
+
+-   jid : 4
+    date : December 2012 - April 2013
+    role : Javascript developer_c
+    company :
+        name : Grand Union
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Redevelopment from scratch of one of the UK top range supermarkets website (flagship_c Waitrose)_c with focus on interactive elements to enhance customers online shopping experience;
+        -   Technology stack composed of Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra (for backend mockups)_c HAML_c Vagrant;
+        -   The project was managed in a loose Agile format with daily scrums;
+        -   Medium sized dedicated frontend development team working under GIT.
+    tech : Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra_c HAML_c Vagrant
+    urls :
+        -  http_cl_fs_fswaitrose.com
+        -  http_cl_fs_fsthegrandunion.com
+    start : 01-12-2012
+
+
+
+
+
+-   jid : 3
+    date : December 2012 - April 2013
+    role : Javascript developer_c
+    company :
+        name : Grand Union
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Redevelopment from scratch of one of the UK top range supermarkets website (flagship)_c with focus on interactive elements to enhance customers online shopping experience;
+        -   Technology stack composed of Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra (for backend mockups)_c HAML_c Vagrant;
+        -   The project was managed in a loose Agile format with daily scrums;
+        -   Medium sized dedicated frontend development team working under GIT.
+    tech : Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra_c HAML_c Vagrant
+    urls :
+        -   Url will be disclosed following current backend integration (java_c third party)
+        -   http_cl_fs_fsthegrandunion.com
+    start : 01-12-2012
+
+
+-   jid : 2
+    date : December 2012 - April 2013
+    role : Javascript developer_c
+    company :
+        name : Grand Union
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Redevelopment from scratch of one of the UK top range supermarkets website (flagship)_c with focus on interactive elements to enhance customers online shopping experience;
+        -   Technology stack composed of Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra (for backend mockups)_c HAML_c Vagrant;
+        -   The project was managed in a loose Agile format with daily scrums;
+        -   Medium sized dedicated frontend development team working under GIT.
+    tech : Backbone_c RequireJS_c Underscore_c Mustache_c Coffeescript_c Sinatra_c HAML_c Vagrant
+    urls :
+        -   Url will be disclosed following current backend integration (java_c third party)
+        -   http_cl_fs_fsthegrandunion.com
+    start : 01-12-2012
+
+-   jid : 1
+    date : October - November 2012
+    role : Javascript developer
+    company :
+        name : Full six
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        - Developed a pilot html5 Javascript application for Sainsburys (one of the UK major supermarkets) Christmas recipes_c in close collaboration with an Umbraco .NET developer (the application is entirely dynamic - cms driven_c a large "single page ajax application").
+        - Followed the project from technical specification (also providing advice in dealing with third party agency) to support for UX and design specifications and eventually development and bakend integration. The pilot proved very successful and is currently being used for other Sainsburys recipes applications.
+        - Scrum project management_c involving simultaneously Ux / Design / Development from projerct early stages
+    tech : Backbone_c RequireJS_c Underscore (with templating)_c Css3 animations_c Jquery_c Masonry
+    urls :
+        - http_cl_fs_fssainsburysatchristmas.com</li>
+        - http_cl_fs_fssainsburysrecipes.co.uk</li>
+        - http_cl_fs_fswww.group.fullsix.com/</li>
+    start : 01-10-2012
+
+-   jid : 0
+    date : July - September 2012
+    role : Javascript developer
+    company :
+        name : Grand Union_c  London
+        type : creative agency
+        description : A digital agency based in Central London specialising in UX and frontend development.
+    tasks :
+        -   Worked on Butlins UK website rebuild (all frontend_c backend developed by thie newrd party) as part of the frontend team.
+        -   Developed the javascript interactive application Interactive Resort Guide for the new Butlins website - a highly interactive "one page" js app based on drag and drop navigation and background images animation.
+    tech : Modernizr_c RequireJS_c Underscore_c Css3 animations_c Jquery_c Youtube js api
+    urls :
+        -   http_cl_fs_fsbutlins.com
+        -   http_cl_fs_fswww.butlins.com/interactive-resort-guide/ (modern browsers only)
+    start : 01-07-2012

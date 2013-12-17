@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+case ARGV[0]
+    when "dev"
+      STDOUT.puts "Starting app in development mode - using Shotgun"
+      exec('shotgun -p 4567 app.rb')
+    when "dist"
+      STDOUT.puts "Starting app in development mode - using Thin"
+      exec('ruby app.rb')
+    else
+      STDOUT.puts <<-EOF
+    Please provide command name
+
+    Usage:
+      appstart dev
+      appstart dist
+    EOF
+end

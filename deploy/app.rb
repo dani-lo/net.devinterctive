@@ -9,7 +9,7 @@ require "haml"
 use Rack::Session::Pool, :expire_after => 259200
 
 set :haml, {
-            :format => :html5,
+            #:format => :html5,
             :ugly => false,
             :attr_wrapper => "\""
         }
@@ -17,7 +17,7 @@ set :haml, {
 class Devinteractive < Sinatra::Application
 
     @app_paths = {
-      :routes => "/Users/dani/Sites/devinteractive.net/app/net.devinterctive/deploy/routes/"
+      :routes => "/home/dani/dev/devinteractive.net/www/deploy/routes/"
     }
 
     class << self

@@ -55,54 +55,110 @@ a {
 .button {
   color: #333; }
 
-body {
-  background: #000 url(/images/akqa/bg.jpg) no-repeat; }
-  body #akqa-test {
+.akqa {
+  background: black url(/images/akqa/bg.jpg) no-repeat; }
+  .akqa.akqa-test {
+    background: none; }
+    .akqa.akqa-test #qunit-dom {
+      display: none; }
+  .akqa #akqa {
     width: 500px;
     margin: 24px 0 0 36px; }
-    body #akqa-test h1, body #akqa-test h2, body #akqa-test h3, body #akqa-test p, body #akqa-test ul, body #akqa-test li, body #akqa-test a, body #akqa-test span, body #akqa-test label {
-      color: #fff;
-      font-family: Verdana; }
-    body #akqa-test #akqa-logo span {
+    .akqa #akqa h1, .akqa #akqa h2, .akqa #akqa h3, .akqa #akqa p, .akqa #akqa ul, .akqa #akqa li, .akqa #akqa a, .akqa #akqa span, .akqa #akqa label {
+      color: white;
+      font-family: "Trebuchet ms", Verdana, sans-serif; }
+    .akqa #akqa ul.errors-list {
+      padding: 4px;
+      border: 1px dotted white; }
+      .akqa #akqa ul.errors-list li {
+        padding: 3px 0;
+        color: #ee0000; }
+    .akqa #akqa #akqa-logo span {
       font-size: 2em; }
-    body #akqa-test #akqa-logo > span {
+    .akqa #akqa #akqa-logo > span {
       display: block;
       width: 120px;
       height: 50px;
       background: #000 url(/images/akqa/logo.png) no-repeat top left;
-      text-indent: 2000%; }
-    body #akqa-test ul#akqa-menu-list {
-      margin: 40px 0 20px;
+      text-indent: 2000%;
+      overflow: hidden; }
+    .akqa #akqa ul#akqa-menu-list {
+      margin: 40px 0;
       clear: left; }
-      body #akqa-test ul#akqa-menu-list li {
+      .akqa #akqa ul#akqa-menu-list li {
         float: left;
         width: 77px;
         height: 19px;
         margin-right: 8px; }
-        body #akqa-test ul#akqa-menu-list li.clearfix {
+        .akqa #akqa ul#akqa-menu-list li.clearfix {
           clear: both;
           float: none;
           width: 0;
           height: 0; }
-        body #akqa-test ul#akqa-menu-list li a {
+        .akqa #akqa ul#akqa-menu-list li a {
           display: block;
           width: 77px;
           height: 19px;
           padding-top: 3px;
           text-align: center;
           text-decoration: none;
-          background: #000 url(/images/akqa/button_b.jpg) no-repeat top left; }
-          body #akqa-test ul#akqa-menu-list li a:hover {
-            background: #000 url(/images/akqa/button_a.jpg) no-repeat top left; }
-    body #akqa-test h2 {
-      margin: 32px 0;
+          background: #000 url(/images/akqa/button_b.jpg) no-repeat top left;
+          color: white; }
+          .akqa #akqa ul#akqa-menu-list li a:hover {
+            background: #000 url(/images/akqa/button_a.jpg) no-repeat top left;
+            color: #ffee33; }
+    .akqa #akqa ul.akqa-focus-list {
+      margin: 12px 0;
+      list-style-type: square;
+      list-style-position: inside; }
+      .akqa #akqa ul.akqa-focus-list li {
+        padding: 3px; }
+    .akqa #akqa h2 {
+      margin: 38px 0;
       font-size: 1.6em;
       color: #ff0066; }
-    body #akqa-test h3 {
-      margin: 20px 0;
+    .akqa #akqa h3 {
+      margin: 16px 0;
       font-size: 1.4em; }
-    body #akqa-test p {
+    .akqa #akqa h4 {
+      margin: 12px 0;
+      font-size: 1em;
+      font-weight: bold;
+      color: #ffee33; }
+    .akqa #akqa p {
+      margin: 6px 0 6px;
       font-weight: normal;
       line-height: 1.3em; }
-      body #akqa-test p span {
+      .akqa #akqa p span {
         font-weight: bold; }
+    .akqa #akqa a {
+      text-decoration: none;
+      color: #ffee33; }
+      .akqa #akqa a:hover {
+        color: white; }
+    .akqa #akqa p.akqa-toggle {
+      margin: 6px 0 12px 0;
+      font-size: 0.95em; }
+      .akqa #akqa p.akqa-toggle a {
+        font-weight: bold;
+        color: #ff0066; }
+        .akqa #akqa p.akqa-toggle a:hover {
+          color: white; }
+    .akqa #akqa .toggable-container.off {
+      display: none; }
+    .akqa #akqa .toggable-container.on {
+      display: block; }
+    .akqa #akqa .news-item {
+      margin: 0 0 16px 0; }
+      .akqa #akqa .news-item p.quote {
+        margin: 12px 24px; }
+    .akqa #akqa form p.instruction {
+      margin: 12px 0; }
+    .akqa #akqa form .form-field {
+      margin: 12px 0; }
+      .akqa #akqa form .form-field label {
+        display: block;
+        margin: 4px 0;
+        font-size: 0.8em; }
+      .akqa #akqa form .form-field input.input-txt {
+        display: block; }
