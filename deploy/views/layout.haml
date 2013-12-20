@@ -9,7 +9,6 @@
 
 %head
     =haml :"partials/head"
-    =haml :"partials/scripts"
     =haml :"partials/styles"
 
 %body{:class => determine_body_class}
@@ -33,4 +32,5 @@
         - if !@error_page
             =haml :"partials/footer"
 
+        =haml :"partials/scripts"
 </html>

@@ -16,6 +16,7 @@ define([
 
   require(['domReady!'], function (document) {
     /* everything is loaded...go! */
+    console.log(ng)
     ng.bootstrap(document, ['app']);
     ng.resumeBootstrap();
   });

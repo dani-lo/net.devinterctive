@@ -10,19 +10,19 @@ module.exports = function (config) {
 
 // list of files / patterns to load in the browser
     files           : [
-      'source/js/libs/jasmine/lib/jasmine-core/jasmine-html.js',
+      'js/libs/jasmine/lib/jasmine-core/jasmine-html.js',
       'tests-main.js',
-      { pattern: 'source/js/**/*.js', included: false }
+      { pattern: 'js/**/*.js', included: false }
     ],
 
 // list of files to exclude
-    exclude         : [ 'source/js/main.js' ],
+    exclude         : [ 'js/main.js' ],
 
     preprocessors: {
        // source files, that you wanna generate coverage for
        // do not include tests or libraries
        // (these files will be instrumented by Istanbul)
-       'source/js/modules/**/*.js': ['coverage']
+       'js/modules/**/*.js': ['coverage']
     },
 
     // optionally, configure the reporter

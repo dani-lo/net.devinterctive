@@ -20,16 +20,16 @@ module.exports = function (grunt) {
         options: {
           bundleExec: true,
           require: [
-            './source/sass/sass_extensions.rb',
+            './sass/sass_extensions.rb',
             'sass-globbing'
           ]
         },
         files: [
           {
             expand: true,
-            cwd: 'source/sass/',
+            cwd: 'sass/',
             src: ['*.scss', '!_*.scss'],
-            dest: 'assets/css/',
+            dest: 'css/',
             ext: '.css'
           }
         ]
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
     },
     requirejs: {
       compile: {
-        options: grunt.file.readJSON('source/js/build-config.json')
+        options: grunt.file.readJSON('js/build-config.json')
       }
     },
     uglify   : {
@@ -99,7 +99,7 @@ module.exports = function (grunt) {
           mangle          : false,
           report          : 'min',
           sourceMappingURL: './source-map.js',
-          sourceMap       : 'build/js/source-map.js'
+          sourceMap       : 'js/source-map.js'
         },
         files  : {
           'build/js/main.js': ['build/js/main-src.js']
@@ -112,21 +112,21 @@ module.exports = function (grunt) {
           livereload: true
         },
         files: [
-          'assets/css/*.css',
-          'source/js/*.js',
-          'source/js/modules/**/*.js',
-          '!source/js/modules/**/*.spec.js'
+          'css/*.css',
+          'js/*.js',
+          'js/modules/**/*.js',
+          '!js/modules/**/*.spec.js'
         ]
       },
       scripts: {
-        files: ['source/js/*.js', 'source/js/modules/**/*.js'],
+        files: ['js/*.js', 'js/modules/**/*.js'],
         tasks: ['karma:watch:run'],
         options: {
           interrupt: true
         }
       },
       sass: {
-        files: ['source/sass/**/*'],
+        files: ['sass/**/*'],
         tasks: ['css:compile'],
         options: {
           interrupt: true
