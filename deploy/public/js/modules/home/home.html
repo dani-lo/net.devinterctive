@@ -1,0 +1,9 @@
+<h2>And here is a list of items from an ng repeat block</h2>
+<div ng-repeat="item in items">
+<span>{{item.title}}</span>
+</div>
+<h2>And here is a new list of items from an ng repeat block, this one uses a different controller</h2>
+<div ng-controller="HomeFormController">
+<div ng-repeat="item in items">
+<span>{{item.title}}</span>
+</div>

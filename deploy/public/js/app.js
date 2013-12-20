@@ -1,22 +1,18 @@
-(function() {
-  var requireSettings;
+/**
+ * loads sub modules and wraps them up into the main module
+ * this should be used for top-level module definitions only
+ */
+define([
+  'angular',
+  './config',
+  './modules/home/index',
+  './modules/blobos/index'
+], function (ng) {
+  'use strict';
 
-  requireSettings = {
-    baseUrl: "/js",
-    paths: {
-      hgn: "lib/hgn",
-      text: "lib/text",
-      hogan: "lib/hogan",
-      async: "lib/async"
-    }
-  };
-
-  require.config(requireSettings);
-
-  require(["util/loader"], _.bind(function(Loader) {
-    var loader;
-    loader = Loader.init(null);
-    return loader.loadClass($(".cv"), "views/cv", {});
-  }, this));
-
-}).call(this);
+  return ng.module('app', [
+    'app.constants',
+    'app.home',
+    'app.blobos'
+  ]);
+});

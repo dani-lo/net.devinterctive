@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS + RequireJS Seed (0.2.1)</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<!-- Content -->
+<div data-ng-view></div>
+
+<!-- Scripts -->
+<script src="js/libs/requirejs/require.js" data-main="js/main.js"></script>
+<script>
+  // let Angular know that we're bootstrapping manually
+  // https://github.com/angular/angular.js/commit/603fe0d19608ffe1915d8bc23bf412912e7ee1ac
+  window.name = "NG_DEFER_BOOTSTRAP!";
+</script>
+
+</body>
+</html>
